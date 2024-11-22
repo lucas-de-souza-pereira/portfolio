@@ -11,7 +11,7 @@ margin: 0;
 }
 
 header {
-    height: 6rem;
+    height: 4rem;
     background-color:antiquewhite;
 }
 
@@ -39,38 +39,40 @@ header {
 /* main */
 
 .section-accueil{
-    background: linear-gradient(90deg, var(--primary-color) 70%, var(--secondary-color) 28%);
+    background: linear-gradient(90deg, var(--primary-color) 69%, var(--secondary-color) 29%);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* height: 30rem; */
 }
 
     .div-accueil{
-        /* margin-top: 8rem; */
-        /* margin-bottom: 8rem; */
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
+        margin-left: 2rem;        
     }
 
         .texte-accueil{
             display: flex;
             flex-direction: column;
-            margin-top: 12rem;
+            margin-top: 2rem;
+            padding-left: 5rem;
         }
 
             .texte-accueil h1{
                 font-size: 4em;
+                width: 20rem;
+                /* padding-top: 1rem; */
+                
             }
 
             
             .texte-accueil h2{
-                font-size: 2em;
+                font-size: 1.5em;
                 margin-top: 1rem;
             }
 
             .texte-accueil p{
-                font-size: 1.5em;
+                font-size: 1.2rem;
                 margin-top: 2rem;
             }
 
@@ -92,6 +94,48 @@ header {
     }
 
         .com-acceuil{
-            width: 15rem;
+            width: 10rem;
             margin-bottom: 4rem;
+            margin-left: 5rem;
         }
+
+/*/////////// page 2  ///////////*/
+
+
+.parcours{
+height: 40rem;
+}
+
+.parcours-1div{
+
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 4rem;
+}
+
+.parcours-1div, h2{
+padding-bottom: 1rem;
+}
+
+.parcours-1div, p{
+    padding-bottom: 0.5rem;
+    }
+
+.parcours-2div{
+    margin-top: 5rem;
+    max-width: 30%;
+}
+
+.parcours-3div{
+    margin-top: 16rem;
+    max-width: 30%;
+}
+
+.parcours-4div{
+    margin-top: 28rem;
+    max-width: 30%;
+}
+
+

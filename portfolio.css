@@ -1,3 +1,5 @@
+/* général */
+
 *{padding: 0;
 margin: 0;
 }
@@ -9,6 +11,13 @@ margin: 0;
     --tertiary-color : #228B22;
     --primary-font-family : 'Manrope', sans-serif;
 }
+
+h2{
+    padding-top: 4rem;
+    margin-left: 2rem;
+    }
+
+/* header */
 
 header {
     height: 4rem;
@@ -90,7 +99,10 @@ header {
 
         }
 
-        
+        .texte-accueil h2{
+            padding-top: 0;
+            margin-left: 0;
+        }
 
     .div-accueil2 {
         
@@ -115,10 +127,7 @@ header {
 height: 40rem; 
 } */
 
-.parcours, h2{
-    margin-top: 2rem;
-    margin-left: 2rem;
-    }
+
 
 .parcours-1div{
 
@@ -129,11 +138,11 @@ height: 40rem;
     gap: 4rem;
 }
 
-.parcours-1div, h3{
+.parcours-1div h3{
 padding-bottom: 1rem;
 }
 
-.parcours-1div, p{
+.parcours-1div p{
     padding-bottom: 0.5rem;
     }
 
@@ -170,7 +179,109 @@ padding-bottom: 1rem;
 
 }
 
+
+/*/////// pages 3 ////////*/
+
+.projets-div1{
+display: flex;
+flex-direction: row;
+
+justify-content: space-around;
+margin-left: 5%;
+margin-right: 5%;
+margin-top: 1rem;
+}
+
+
+    .projets-div2{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 45%;
+        background-color: #228B22;
+        border-radius: 1rem;
+        border: 1px black solid;
+        height: 28rem;
+        padding-bottom: 0.4rem;
+        }
+
+        .projets-div2 h3{
+
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .img-projets{
+            width: 70%;
+            height: 17rem;
+            background-size: cover;
+        }
+
+        .projets-div2 p{
+
+            width: 80%;
+            padding-top: 0.5rem;
+        }            
+
+        .center{
+            display: flex;
+        justify-content: center;
+        }
+
+        .projets-div2 ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 40%;
+            list-style: none;
+        }
+
+            .projets-div2 li{
+
+                width: 4rem;
+                height: 4rem;
+                margin-top: 0.5rem;
+                }
+
+
+                /* page 4 */
+
+
+.section-contact{
+
+}
+
+.section-contact p{
+
+    
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.section-contact ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.section-contact img{
+width: 12rem;
+height: 12rem;
+}
+
+
+
+
 @media only screen and (max-width:1250px){
+
+
+h2{
+    text-align: center;
+}
 
     /* pour section accueil */
     
@@ -231,25 +342,28 @@ margin-top: 5rem;
 max-width: 60%;
 }
 
-}
-/*/////// pages 3 ////////*/
-
-.img-projets{
-    width: 20rem;
-    height: 18rem;
-    background-size: cover;
-}
-
+/* pour section projets  */
 
 .projets-div1{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
-margin-left: 5%;
-margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    }
+
+    .projets-div2{
+        width: 80%;
+        height: 30rem;
 }
 
-.projets-div2{
-width: 30%;
+
+.section-contact ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
 }

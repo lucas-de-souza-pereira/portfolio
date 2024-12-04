@@ -28,6 +28,12 @@ h1{
     font-size: 2.2rem;
 }
 
+h3{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
 p{
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -81,80 +87,89 @@ header {
 
 /*//////// main ///////*/
 
+/* section de l'acceuil */
 .section-accueil{
     background: linear-gradient(90deg, var(--primary-color) 69%, var(--secondary-color) 29%);
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
  
 }
-
+    /* div pour alligner les divs de l'accueil */
     .div-accueil{
         margin-top: 5rem;
         display: flex;
         flex-direction: column;      
     }
-
+        /* div pour gérer titre et nom */
         .texte-accueil{
             display: flex;
             flex-direction: column;
-            margin-top: 2rem;
+            margin-top: 4rem;
+            text-align: center;
+            margin-bottom: 4rem;
         }
-
+           /* position titre */
             .texte-accueil h1{
-                /* font-size: 4em; */
-                /* width: 20rem; */
-                /* padding-top: 1rem; */
-                
+                margin-bottom: 1rem;
+                margin-top: 1rem;
             }
-
-            
+            /* position nom */
             .texte-accueil h2{
                 font-size: 1.5em;
                 margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding-top: 0;
+                margin-left: 0;
             }
 
-            .texte-accueil p{
-                font-size: 1.2rem;
-                margin-top: 2rem;
+            .texte-acceuil p{
+                font-size:1.5rem
             }
-
-        .avatar-accueil{
-            max-width: 20rem;
-            border-radius: 4rem;
-            margin-right: 14%;
         
-        }
-
-        .texte-accueil h2{
-            padding-top: 0;
-            margin-left: 0;
-        }
-
-    .div-accueil2 {
-        
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 2rem;
-        margin: 30%;
-        gap: 1rem;    
-        /* margin-top: 10rem; */
+        /* flex pour sous texte accueil */
+        .texte-accueil2 {
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            gap:1.5rem;
+    
     
     }
-
+        /* texte étude et recherche */
         .com-acceuil{
-            width: 10rem;
+            text-align: center;
+            width: 8rem;
     
         }
+
+  /* photo avatar */
+  .avatar-accueil{
+    max-width: 18rem;
+    border-radius: 4rem;
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+/*     
+    margin-right: 14%; */
+
+}
+
+
+
+
+
 
 /*/////////// page 2  ///////////*/
 
 
-/* .section-parcours{
-height: 40rem; 
-} */
+.section-parcours{
+background-color: #ece9e3ba ;
+padding-bottom: 2rem;
+}
 
 
 
@@ -165,24 +180,32 @@ height: 40rem;
     margin-left: 2rem;
     margin-right: 2rem;
     gap: 4rem;
+    
+    
 }
 
 .parcours-1div h3{
 padding-bottom: 1rem;
+color: azure;
 }
 
 .parcours-1div p{
     padding-bottom: 0.5rem;
+    color: azure;
     }
 
 .parcours-2div{
         display: flex;
         justify-content: flex-start;
+        
     }
 
 .parcours-2-1div{
     margin-top: 2rem;
     max-width: 30%;
+    background-color: #5E819D;
+    padding: 0.5rem;
+    border-radius: 1rem;
 }
 
 .parcours-3div{
@@ -195,6 +218,9 @@ padding-bottom: 1rem;
     align-items: center;
     align-content: center;
     max-width: 30%;
+    background-color: #7688B0;
+    padding: 0.5rem;
+    border-radius: 1rem;
 }
 
 .parcours-4div{
@@ -205,6 +231,9 @@ padding-bottom: 1rem;
 
 .parcours-4-1div{
     max-width: 30%;
+    background-color: #7BAFD4;
+    padding: 0.5rem;
+    border-radius: 1rem;
 
 }
 
@@ -303,96 +332,93 @@ height: 12rem;
 }
 
 
+@media only screen and (max-width:800px){
 
 
-@media only screen and (max-width:1250px){
-
-
-h2{
-    text-align: center;
-}
-
-    /* pour section accueil */
+    h2{
+       text-align: center;
+   } 
     
-                .section-accueil{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    align-items: center!important;
-                    background: linear-gradient(180deg, var(--primary-color) 60%, var(--secondary-color) 40%);
-                    
-                }
-    
-                .avatar-accueil{
-                        max-width: 20rem;
-                        border-radius: 4rem;
-                        margin: auto;
-                        margin-bottom: 2rem;
-                    }
-               
+       /* pour section accueil */
+       
+                   .section-accueil{
+                       display: flex;
+                       flex-direction: column;
+                       /* justify-content: flex-start; */
+                       align-items: center;
+                       background: linear-gradient(180deg, var(--primary-color) 60%, var(--secondary-color) 40%);
+                       
+                   }
+       
+                   .avatar-accueil{
+                           max-width: 20rem;
+                           margin:2rem;
+                       } 
+                  
+   
+       /* pour section parcours */
+   
+   .section-parcours{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   .parcours-2div{
+       display: flex;
+       justify-content: center;
+       width: 100%;
+   
+   }
+   
+   .parcours-2-1div{
 
-    /* pour section parcours */
-
-.section-parcours{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.parcours-2div{
-    display: flex;
-    justify-content: center;
-}
-
-.parcours-2-1div{
-margin-top: 2rem;
-max-width: 60%;
-}
-
-.parcours-3div{
-display: flex;
-justify-content: center;
-margin-top: 5rem;
-}
-
-.parcours-3-1div{
-align-items: center;
-align-content: center;
-max-width: 60%;
-}
-
-.parcours-4div{
-display: flex;
-justify-content: center;
-margin-top: 5rem;
-}
-
-.parcours-4-1div{
-max-width: 60%;
-}
-
-/* pour section projets  */
-
-.projets-div1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:3rem;
-    }
-
-    .projets-div2{
-        width: 80%;
-        height: 30rem;
-}
-
-
-.section-contact ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
+   max-width: 100%;
+   }
+   
+   .parcours-3div{
+   display: flex;
+   justify-content: center;
+   margin-top: 5rem;
+   }
+   
+   .parcours-3-1div{
+   max-width: 100%;
+   }
+   
+   .parcours-4div{
+   display: flex;
+   justify-content: center;
+   margin-top: 5rem;
+   }
+   
+   .parcours-4-1div{
+   max-width: 100%;
+   }
+   
+   /* pour section projets  */
+   
+   .projets-div1{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap:3rem;
+       }
+   
+       .projets-div2{
+           width: 80%;
+           height: 30rem;
+   }
+   
+   
+   .section-contact ul{
+       display: flex;
+       flex-direction: column!important;
+       justify-content: center;
+       align-items: center;
+       gap: 2rem;
+   }
+   
 }

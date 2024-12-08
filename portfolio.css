@@ -18,6 +18,7 @@ h2{
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-optical-sizing: auto;
+    font-size: 2rem;
     }
 
 h1{
@@ -25,21 +26,27 @@ h1{
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
 }
 
 h3{
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-optical-sizing: auto;
+    font-size: 1.3rem;
 }
 
 p{
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-optical-sizing: auto;
+    font-size: 1.1rem;
+    
 }
 
+a{
+    text-decoration: none;
+}
 /* header */
 
 header {
@@ -62,6 +69,7 @@ header {
             font-weight: 500;
             font-style: normal;
             font-size: 3em;
+            color : black;
         }
 
         .nav-ul{
@@ -82,6 +90,7 @@ header {
             font-optical-sizing: auto;
             font-weight: 500;
             font-style: normal;
+            color : black
           }
         
 
@@ -159,10 +168,6 @@ header {
 }
 
 
-
-
-
-
 /*/////////// page 2  ///////////*/
 
 
@@ -203,7 +208,9 @@ color: azure;
 .parcours-2-1div{
     margin-top: 2rem;
     max-width: 30%;
-    background-color: #5E819D;
+    /* background-color: #5E819D; */
+    background-color: var(--secondary-color);
+    border: 1px black solid;
     padding: 0.5rem;
     border-radius: 1rem;
 }
@@ -219,6 +226,7 @@ color: azure;
     align-content: center;
     max-width: 30%;
     background-color: #7688B0;
+    border: 1px black solid;
     padding: 0.5rem;
     border-radius: 1rem;
 }
@@ -232,6 +240,7 @@ color: azure;
 .parcours-4-1div{
     max-width: 30%;
     background-color: #7BAFD4;
+    border: 1px black solid;
     padding: 0.5rem;
     border-radius: 1rem;
 
@@ -239,6 +248,10 @@ color: azure;
 
 
 /*/////// pages 3 ////////*/
+
+.section-projets{
+    background-color: var(--secondary-color);
+}
 
 .projets-div1{
 display: flex;
@@ -248,6 +261,7 @@ justify-content: space-around;
 margin-left: 5%;
 margin-right: 5%;
 margin-top: 1rem;
+padding-bottom: 4rem;
 }
 
 
@@ -257,7 +271,7 @@ margin-top: 1rem;
         justify-content: start;
         align-items: center;
         width: 45%;
-        background-color: #228B22;
+        background-color: #ece9e3ba;
         border-radius: 1rem;
         border: 1px black solid;
         height: 28rem;
@@ -307,7 +321,8 @@ margin-top: 1rem;
 
 
 .section-contact{
-
+background-color: var(--primary-color);
+padding-bottom: 1rem;
 }
 
 .section-contact p{
@@ -337,6 +352,7 @@ height: 12rem;
 
     h2{
        text-align: center;
+       margin-left: 0;
    } 
     
        /* pour section accueil */

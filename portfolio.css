@@ -251,7 +251,7 @@ color: azure;
 
 .section-projets{
     background-color: var(--secondary-color);
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
 
 .projets-div1{
@@ -387,7 +387,9 @@ h3{
 }
 
 
-
+.logo-rando13{
+    border-radius: 10px;
+}
 
 
 

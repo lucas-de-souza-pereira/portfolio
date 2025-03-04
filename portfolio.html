@@ -34,12 +34,12 @@
 
     <div class="div-accueil">
         <div class="texte-accueil">
-            <h1 >Developpeur IT</h1>
+            <h1 >💻 Développeur logiciel</h1>
             <h2><strong>Lucas De Souza Pereira</strong></h2>
         </div>
         <div class="texte-accueil2">
-            <p class="com-acceuil"><br>👨‍🎓</br> actuellement en étude à la plateforme</p>
-            <p class="com-acceuil"><br>💼</br> recherche alternance sur marseille</p>
+            <p class="com-acceuil"><br>👨‍🎓</br> Actuellement en étude à la plateforme</p>
+            <p class="com-acceuil"><br>💼</br> Recherche alternance sur marseille</p>
         </div>
     </div>
     <img src="screen/avatar.png" alt="photo d'un avatar" class="avatar-accueil"/>
@@ -93,36 +93,169 @@
 
 <h2 >Mes projets</h2>
 
-    <div class="projets-div1">
+<h3>Python <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" class="logo-langue" /> </h3>
 
-        <div class="projets-div2">
-
-            <h3>Rando-13</h3>
-            <img src="screen/rando-13.png" class="img-projets" alt="photo d'un site sur la rando"/> 
-            <p>Premiers projet en htlm css, Rando-13 est un site web dédié 
-                à l'univers de la randonnée dans les bouches du rhône</p>
-            <p class="center">languages appris :</p>
-            <ul>
-            <li><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3"/> </a> </li>
-            <li><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5"/> </a> </li>
-            </ul>
-        </div>
-
-
-        <div class="projets-div2">
-            <h3>Python</h3>
-            <img src="screen/rando-13.png" class="img-projets" alt="photo d'un site sur la rando"/> 
-            <p>projet à venir</p>
-            <p class="center">languages appris :</p>
-            <ul>
-                <li>
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" /> </a>  
-        </li>
-    </ul>
-
-        </div>
-
+<div class="projets-container">
+    <!-- Projet Pokémon -->
+    <div class="projet" onclick="openModal('modal-pokemon')">
+        <img src="screen/blastoise_front.png" class="img-projets" alt="photo d'un pokemon"/>
+        <p>Projet Pokémon - Animation en Python</p>
     </div>
+
+    <!-- Projet Fruit Ninja -->
+    <div class="projet" onclick="openModal('modal-fruitninja')">
+        <img src="screen/ninja.png" class="img-projets" alt="photo du projet Fruit Ninja"/>
+        <p>Projet Fruit Ninja - Jeu en Python</p>
+    </div>
+
+    <!-- Projet Jeu du Pendu -->
+    <div class="projet" onclick="openModal('modal-pendu')">
+        <img src="screen/hangman.png" class="img-projets" alt="photo du projet Pendu"/>
+        <p>Projet Pendu - Jeu en Python</p>
+    </div>
+
+    <!-- Projet Calculette -->
+    <div class="projet" onclick="openModal('modal-calculette')">
+        <img src="screen/calculette.png" class="img-projets" alt="photo du projet Calculette"/>
+        <p>Projet Calculette - Application en Python</p>
+    </div>
+
+    <!-- Projet Horloge -->
+    <div class="projet" onclick="openModal('modal-horloge')">
+        <img src="screen/horloge.png" class="img-projets" alt="photo du projet Horloge"/>
+        <p>Projet Horloge - Application en Python</p>
+    </div>
+</div>
+
+
+
+<!-- Modale pour le projet Pokémon -->
+<div id="modal-pokemon" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-pokemon')">&times;</span>
+        <img src="gif/pokemon.gif" class="gif-projet" alt="Animation fruit ninja">
+        <p>Projet réalisé en Python avec Pygame</p>
+        <p>Le jeu permet de :</p>
+        <ul>
+            <li>Combattre les pokemon que l'on souhaite</li>
+            <li>Sauvegarder ou créer un profil</li>
+            <li>Choisir son pokemon et le faire évoluer</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Modale Fruit Ninja -->
+<div id="modal-fruitninja" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-fruitninja')">&times;</span>
+        <img src="gif/ninjafruit.gif" class="gif-projet" alt="Animation Fruit Ninja">
+        <p>Projet réalisé en Python avec Pygame</p>
+        <p>Le jeu permet de :</p>
+        <ul>
+            <li>Découper des fruits</li>
+            <li>Éviter les bombes</li>
+            <li>Arreter le temps avec les glaçons</li>
+            <li>Regarder les meilleurs scores</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Modale Pendu -->
+<div id="modal-pendu" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-pendu')">&times;</span>
+        <img src="gif/hangman.gif" class="gif-projet" alt="Animation Pendu">
+        <p>Jeu du Pendu en Python</p>
+        <p>Le jeu permet de :</p>
+        <ul>
+            <li>Deviner un mot caché</li>
+            <li>Changer de joueur</li>
+            <li>Regarder les meilleurs scores</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Modale Calculette -->
+<div id="modal-calculette" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-calculette')">&times;</span>
+        <img src="gif/calculator.gif" class="gif-projet" alt="Animation Calculette">
+        <p>Application Calculette en Python</p>
+        <p>Cette calculette permet de :</p>
+        <ul>
+            <li>Effectuer des opérations simples</li>
+            <li>Regarder l'historique des cacults</li>
+            <li>Reset</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Modale Horloge -->
+<div id="modal-horloge" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-horloge')">&times;</span>
+        <img src="gif/clock.gif" class="gif-projet" alt="Animation Horloge">
+        <p>Horloge en Python</p>
+        <p>L'application permet de :</p>
+        <ul>
+            <li>Afficher l’heure en temps réel</li>
+            <li>Gérer une alarme</li>
+            <li>Régler l'heure et le format</li>
+        </ul>
+    </div>
+</div>
+
+<h3>Web 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="html" class="logo-langue"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="css" class="logo-langue"/>
+</h3>
+
+
+
+<div class="projets-container">
+    <!-- Projet Fansite -->
+    <div class="projet" onclick="openModal('modal-fansite')">
+        <img src="screen/logo-rando13.png" class="img-projets logo-rando13" alt="photo du projet Fansite"/>
+        <p>Fansite - Site web dédié à la rando</p>
+    </div>
+
+    <!-- Projet Site pour Association -->
+    <div class="projet" onclick="openModal('modal-association')">
+        <img src="screen/Logo1 régie du cinéma.png" class="img-projets" alt="photo du site pour association"/>
+        <p>Réalisation d'un site pour une association</p>
+    </div>
+</div>
+
+<!-- Modale Fansite -->
+<div id="modal-fansite" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-fansite')">&times;</span>
+        <img src="gif/rando13.gif" class="gif-projet" alt="Animation Fansite">
+        <p>Projet Fansite - Rando-13</p>
+        <p>Ce site web à pour objectif :</p>
+        <ul>
+            <li>Être informé des actualités sur la randonnée dans les Bouches-du-Rhône</li>
+            <li>Être responsive</li>
+            <li>Développer une structure HTML/CSS complète</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Modale Site pour Association -->
+<div id="modal-association" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-association')">&times;</span>
+        <img src="gif/association.gif" class="gif-projet" alt="Animation Association">
+        <p>Projet Site pour Association</p>
+        <p>Ce projet permet de :</p>
+        <ul>
+            <li>Présenter l’association et ses activités</li>
+            <li>Mettre en place un espace pour les membres</li>
+            <li>Gérer les événements et les contacts</li>
+        </ul>
+    </div>
+</div>
+
 
 </section>
 
@@ -148,9 +281,31 @@
 
 
 </main>
+<script>
+    // Fonction pour ouvrir la modale
+function openModal(id) {
+    console.log("Ouverture de la modale : " + id);
+    document.getElementById(id).style.display = "flex";
+}
 
+// Fonction pour fermer la modale
+function closeModal(id) {
+    console.log("Fermeture de la modale : " + id);
+    document.getElementById(id).style.display = "none";
+}
 
+// Fermer la modale en cliquant en dehors
+window.onclick = function(event) {
+    let modals = document.querySelectorAll(".modal");
+    modals.forEach(modal => {
+        if (event.target === modal) {
+            console.log("Fermeture en cliquant en dehors");
+            modal.style.display = "none";
+        }
+    });
+};
 
+</script>
 </body>
 </html>
 

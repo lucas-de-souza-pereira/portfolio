@@ -251,6 +251,7 @@ color: azure;
 
 .section-projets{
     background-color: var(--secondary-color);
+    padding-bottom: 3rem;
 }
 
 .projets-div1{
@@ -263,6 +264,135 @@ margin-right: 5%;
 margin-top: 1rem;
 padding-bottom: 4rem;
 }
+
+.section-projets h3{
+    margin-left: 2rem;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+/* 
+h3{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-size: 1.3rem;
+} */
+
+
+.logo-langue{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.projets-python {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.projets-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet le passage à la ligne sur petits écrans */
+    justify-content: center; /* Centre les éléments */
+    gap: 2rem; /* Espace entre les cases */
+    margin-top: 2rem;
+}
+
+
+.projet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px; /* Taille fixe pour les cases */
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.projet img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+}
+
+.projet p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: black;
+}
+
+/* Style général de la modale */
+.modal {
+    display: none; /* Cachée au chargement de la page */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Contenu de la modale */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border: 2px black solid;
+}
+
+/* Bouton de fermeture */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Image GIF */
+.gif-projet {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.section-projets ul {
+    list-style: none; /* Supprime les puces des listes non ordonnées */
+    padding: 0; /* Supprime le padding par défaut */
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    padding-top: 0.2rem;
+}
+
+
+.logo-rando13{
+    border-radius: 10px;
+}
+
+
+
 
 
     .projets-div2{
@@ -322,7 +452,7 @@ padding-bottom: 4rem;
 
 .section-contact{
 background-color: var(--primary-color);
-padding-bottom: 1rem;
+padding-bottom: 0.2rem;
 }
 
 .section-contact p{

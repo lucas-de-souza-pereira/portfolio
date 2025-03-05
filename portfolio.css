@@ -6,11 +6,15 @@ margin: 0;
 
 
 :root {
-    --primary-color : #D2B48C;
-    --secondary-color : #2E4A7F;
-    --tertiary-color : #228B22;
-    --primary-font-family : 'Manrope', sans-serif;
+    --primary-color: #1E293B;
+    --secondary-color: #475569;
+    --tertiary-color: #38BDF8;
+    --background-color: #F8FAFC;
+    --text-color: #E2E8F0;
 }
+
+
+
 
 h2{
     padding-top: 4rem;
@@ -19,6 +23,7 @@ h2{
     font-style: normal;
     font-optical-sizing: auto;
     font-size: 2rem;
+    color: var(--text-color);
     }
 
 h1{
@@ -27,6 +32,7 @@ h1{
     font-weight: 800;
     font-style: normal;
     font-size: 2.5rem;
+    color: var(--text-color);
 }
 
 h3{
@@ -34,6 +40,7 @@ h3{
     font-style: normal;
     font-optical-sizing: auto;
     font-size: 1.3rem;
+    color: var(--text-color);
 }
 
 p{
@@ -41,7 +48,7 @@ p{
     font-style: normal;
     font-optical-sizing: auto;
     font-size: 1.1rem;
-    
+    color: var(--text-color);
 }
 
 a{
@@ -51,7 +58,7 @@ a{
 
 header {
     height: 4rem;
-    background-color:antiquewhite;
+    background-color:var(--background-color);
     position: fixed;
     width: 100%;   
         }
@@ -90,8 +97,8 @@ header {
             font-optical-sizing: auto;
             font-weight: 500;
             font-style: normal;
-            color : black
-          }
+            color : var(--primary-color)
+        }
         
 
 /*//////// main ///////*/
@@ -103,8 +110,8 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
- 
 }
+
     /* div pour alligner les divs de l'accueil */
     .div-accueil{
         margin-top: 5rem;
@@ -172,11 +179,14 @@ header {
 
 
 .section-parcours{
-background-color: #ece9e3ba ;
+background-color: var(--background-color) ;
 padding-bottom: 2rem;
 }
 
-
+.section-parcours h2{
+    padding-bottom: 1rem;
+    color: var(--primary-color);
+    }
 
 .parcours-1div{
 
@@ -185,18 +195,18 @@ padding-bottom: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
     gap: 4rem;
-    
-    
 }
+
+
 
 .parcours-1div h3{
 padding-bottom: 1rem;
-color: azure;
+color: var(--text-color);
 }
 
 .parcours-1div p{
     padding-bottom: 0.5rem;
-    color: azure;
+    color: var(--text-color);
     }
 
 .parcours-2div{
@@ -209,7 +219,7 @@ color: azure;
     margin-top: 2rem;
     max-width: 30%;
     /* background-color: #5E819D; */
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     border: 1px black solid;
     padding: 0.5rem;
     border-radius: 1rem;
@@ -225,7 +235,7 @@ color: azure;
     align-items: center;
     align-content: center;
     max-width: 30%;
-    background-color: #7688B0;
+    background-color: var(--secondary-color);
     border: 1px black solid;
     padding: 0.5rem;
     border-radius: 1rem;
@@ -271,6 +281,10 @@ padding-bottom: 4rem;
     font-size: 1.5rem;
     text-align: center;
 
+}
+
+.section-projets p, ul{
+    color: var(--primary-color);
 }
 
 /* 
@@ -327,12 +341,12 @@ h3{
 .projet p {
     margin-top: 0.5rem;
     font-size: 1rem;
-    color: black;
+    color: var(--primary-color);
 }
 
 /* Style général de la modale */
 .modal {
-    display: none; /* Cachée au chargement de la page */
+    display: none; 
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -350,7 +364,7 @@ h3{
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 40%;
+    width: 50%;
     text-align: center;
     position: relative;
     padding-top: 2rem;
@@ -370,14 +384,14 @@ h3{
 /* Image GIF */
 .gif-projet {
     width: 100%;
-    max-height: 300px;
+    max-height: 350px;
     object-fit: contain;
     margin-bottom: 1rem;
 }
 
 .section-projets ul {
-    list-style: none; /* Supprime les puces des listes non ordonnées */
-    padding: 0; /* Supprime le padding par défaut */
+    list-style: none; 
+    padding: 0; 
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-optical-sizing: auto;
@@ -391,6 +405,30 @@ h3{
     border-radius: 10px;
 }
 
+.github-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.github-link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; 
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-size: 1rem;
+}
+
+.github-link a:hover {
+    color: #0366d6; 
+}
+
+.github-logo {
+    width: 24px;
+    height: 24px;
+}
 
 
 

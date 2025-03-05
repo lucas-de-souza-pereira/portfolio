@@ -14,8 +14,6 @@ margin: 0;
 }
 
 
-
-
 h2{
     padding-top: 4rem;
     margin-left: 2rem;
@@ -140,10 +138,6 @@ header {
                 margin-left: 0;
             }
 
-            .texte-acceuil p{
-                font-size:1.5rem
-            }
-        
         /* flex pour sous texte accueil */
         .texte-accueil2 {
             
@@ -605,4 +599,34 @@ height: 12rem;
        gap: 2rem;
    }
    
+}
+
+
+.modal-content {
+    /* background-color: white;
+    padding: 20px;
+    border-radius: 10px; */
+    width: 80%;
+    /* text-align: center;
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border: 2px black solid; */
+}
+
+/* Bouton de fermeture */
+.close {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Image GIF */
+.gif-projet {
+    /* width: 100%; */
+    max-height: 500px;
+    /* object-fit: contain;
+    margin-bottom: 1rem; */
 }
